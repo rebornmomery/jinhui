@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">短视频社交</string>
+    <string name="action_settings">Settings</string>
+    
+    <!-- 主页fragment部分 -->
+    <string name="homepage">主页</string>
+    <string name="discover">发现</string>
+    <string name="search">搜索</string>
+    <string name="profile">我</string>
+    
+    <string name="essence">精选</string>
+    <string name="follow">关注</string>
+
+</resources>

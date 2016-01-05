@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/record_video_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/title_bg_color" >
+
+        <ImageView
+            android:id="@+id/record_video_title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dip"
+            android:padding="10dip"
+            android:src="@drawable/ic_close" />
+
+        <ImageView
+            android:id="@+id/record_video_title_toggle_flash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dip"
+            android:layout_toLeftOf="@+id/record_video_title_switch_camera"
+            android:padding="10dip"
+            android:src="@drawable/record_camera_flash_led_off_normal" />
+
+        <ImageView
+            android:id="@+id/record_video_title_switch_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:padding="10dip"
+            android:src="@drawable/ic_switch_camera" />
+    </RelativeLayout>
+
+    <com.andriod.shortvideo.recordvideo.widget.ProgressView
+        android:id="@+id/recorder_progress"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:layout_below="@id/record_video_title_layout" />
+
+    <RelativeLayout
+        android:id="@+id/recorder_surface_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.andriod.shortvideo.recordvideo.widget.NewVideoSurfaceView
+            android:id="@+id/new_video_surface_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+            android:id="@+id/recorder_bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white" >
+
+            <ImageView
+                android:id="@+id/recorder_video_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/record_controller" />
+
+            <TextView
+                android:id="@+id/recorder_next"
+                android:layout_width="66dp"
+                android:layout_height="36dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="下一步"
+                android:textColor="#444444"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/recorder_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+</LinearLayout>

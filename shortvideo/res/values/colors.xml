@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <!-- 透明背景颜色 -->
+    <color name="com_transparent">#00000000</color>
+    
+    <!-- title bar颜色 -->
+    <color name="title_bg_color">#ff5454</color>
+    
+    <!-- 黑色 -->
+    <color name="black">#000000</color>
+    <color name="white">#FBFCFC</color>
+    <color name="unfocused">#fffdfdfe</color>
+    <color name="pressed">#ff69c4ff</color>
+    <color name="selected">#ff387efe</color>
+    <color name="focused">#ff494eff</color>
+    <color name="actionbar_text">#ffffffff</color>
+    <color name="pink">#F59EB6</color>
+    <color name="pinkla">#ED6DA6</color>
+    <color name="blue">#66ceff</color>
+    <color name="TextColor">#9E9F9F</color>
+    <color name="block">#e5e0df</color>
+    <color name="Contact_bg">#EBEBEB</color>
+    <color name="LineColor">#F2F3F3</color>
+    <color name="MoreBackGround">#FEFFFF</color>
+    
+     <!-- 通用的文字颜色 -->
+    <color name="com_text_tx1">#333333</color>                 <!-- 正文 -->
+    <color name="com_text_tx2">#777777</color>                   <!-- 强文字 -->
+    <color name="com_text_tx3">#a6a6a6</color>                      <!-- 弱文字 -->
+    
+    <color name="com_text_black_trans">#20000000</color>
+    
+</resources>

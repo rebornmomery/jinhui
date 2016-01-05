@@ -1,0 +1,145 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 装载fragment -->
+
+    <RelativeLayout
+        android:id="@+id/main_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="52dp" >
+    </RelativeLayout>
+
+    <!-- 底部点击选择fragment的按钮布局 -->
+
+    <LinearLayout
+        android:id="@+id/main_fragment_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:background="#f7f7f7"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/homepage_fragment_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/homepage_fragment_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/homepage_fragment_button_selector" />
+
+            <TextView
+                android:id="@+id/homepage_fragment_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/homepage"
+                android:textSize="12sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:layout_below="@id/homepage_fragment_image"
+                android:textColor="@color/com_text_tx2"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/disconver_fragment_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/discover_fragment_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/discover_fragment_button_selector" />
+
+            <TextView
+                android:id="@+id/discover_fragment_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/discover"
+                android:textSize="12sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:layout_below="@id/discover_fragment_image"
+                android:textColor="@color/com_text_tx2"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/video_activity_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/video_activity_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_tab_camera" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/search_fragment_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/search_fragment_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/search_fragment_button_selector" />
+
+            <TextView
+                android:id="@+id/search_fragment_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/search"
+                android:textSize="12sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:layout_below="@id/search_fragment_image"
+                android:textColor="@color/com_text_tx2"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/profile_fragment_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/profile_fragment_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/profile_fragment_button_selector" />
+
+            <TextView
+                android:id="@+id/profile_fragment_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile"
+                android:textSize="12sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:layout_below="@id/profile_fragment_image"
+                android:textColor="@color/com_text_tx2"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

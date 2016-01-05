@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="?android:attr/actionBarSize"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/user_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo" />
+
+    <TableLayout
+        android:id="@+id/tablelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_img"
+        android:layout_centerHorizontal="true"
+        android:stretchColumns="0,1" >
+
+        <TableRow>
+
+
+            <EditText
+                android:background="@drawable/top_et_bg"
+                android:id="@+id/login_account_edt"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:hint="Input your Name "
+                android:paddingLeft="3dp"
+                android:textCursorDrawable="@null"
+                android:textColor="@color/black"
+                android:maxLines="1" />
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/login_line"
+                android:background="@color/block"
+                android:layout_height="1dp" />
+        </TableRow>
+        
+        <TableRow>
+
+
+            <EditText
+                android:id="@+id/login_password_edt"
+                android:layout_width="wrap_content"
+                android:background="@drawable/bottom_et_bg"
+                android:layout_height="wrap_content"
+                android:textCursorDrawable="@null"
+                android:hint="Input your Password "
+                android:paddingLeft="3dp"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:password="true" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/myLineralayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tablelayout"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@drawable/login_selector"
+        android:layout_below="@id/myLineralayout"
+        android:layout_centerHorizontal="true"
+        android:text="Login In" />
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@drawable/signup_selector"
+        android:layout_below="@id/login_btn"
+        android:layout_marginTop="15dp"
+        android:text="Regist" />
+
+    <Button
+        android:id="@+id/cancel_btn"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@drawable/login_selector"
+        android:layout_below="@id/register_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="cancel" />
+</RelativeLayout>

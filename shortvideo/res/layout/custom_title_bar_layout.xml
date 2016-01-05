@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_rl"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/titlebar_height"
+    android:background="@color/title_bg_color" >
+
+    <!-- 左侧按钮 -->
+
+    <TextView
+        android:id="@+id/left_text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@drawable/ic_back"
+        android:minWidth="@dimen/titlebar_ic_width"
+        android:padding="@dimen/titlebar_ic_padding"
+        android:textColor="@color/white"
+        android:textSize="16dp" 
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:background="@drawable/com_item_translucence_black_bg_selector"
+        />
+
+
+    <!-- 中间标题 -->
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:textSize="18dp" 
+        android:maxWidth="148dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        />
+
+    <!-- 右侧按钮 -->
+
+    <TextView
+        android:id="@+id/right_text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:minWidth="@dimen/titlebar_ic_width"
+        android:padding="@dimen/titlebar_ic_padding"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:background="@drawable/com_item_translucence_black_bg_selector"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/right_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/right_text"
+        android:layout_alignTop="@+id/right_text"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible" />
+</RelativeLayout>

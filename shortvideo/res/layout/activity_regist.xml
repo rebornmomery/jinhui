@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="?android:attr/actionBarSize"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/user_img2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo" />
+
+    <TableLayout
+        android:id="@+id/tablelayout_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_img2"
+        android:layout_centerHorizontal="true"
+        android:stretchColumns="0,1" >
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/login_name_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top_et_bg"
+                android:hint="Input your Name "
+                android:maxLines="1"
+                android:textCursorDrawable="@null" />
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/r_line"
+                android:layout_height="1dp"
+                android:background="@color/block" />
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/login_password_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bottom_et_bg"
+                android:hint="Input your Password "
+                android:maxLines="1"
+                android:password="true"
+                android:textCursorDrawable="@null" />
+        </TableRow>
+    </TableLayout>
+
+    <CheckBox
+        android:id="@+id/show_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tablelayout_reg"
+        android:text="显示密码" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/show_reg"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/regist_btn"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/login_selector"
+            android:text="Regist" />
+
+        <Button
+            android:id="@+id/return_btn"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_selector"
+            android:text="Return" />
+    </LinearLayout>
+
+</RelativeLayout>
